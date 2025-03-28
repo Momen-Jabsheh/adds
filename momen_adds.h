@@ -199,67 +199,6 @@ string clean_string(string st, bool keepnums = true)
   return result ;
 }
 //////////////////////////////////////////////////////////////////////
-class person
-{
-   public :
-     string first_name_oop ;
-     string last_name_oop ;
-   void print_full_name()
-   {
-    cout << first_name_oop << ' ' << last_name_oop <<endl ;
-   }   
-};
-struct student
-{
-  int age ;
-  string name ;
-  int id ;
-};
-class rectangle{
-  private :
-     float heigth  ; // make a defoult value
-     float width  ;
-  public :
-  rectangle (float w , float h) : heigth(0) , width(0)
-  {}
-   float get_heigth()
-  {
-    return heigth ;
-  }
-  void set_heigth(float x)
-  {
-     heigth = x;
-  }
-  void set_width(float x)
-  {
-   width = x ;
-  }
-  float get_width()
-  {
-    return width ;
-  }
-  float get_area() ;
-} ;
-float rectangle:: get_area()
-{
-   return heigth * width ;
-}
-class youtube_chanle {
-  public :
-  string name ;
-  string owner_name ;
-  int subs_count ;
-  youtube_chanle(): subs_count(0) 
-  {
-    cout << "\n" ;
-  }
-  void get_info() {
-       cout << "name : " << name << endl;
-       cout << "owner name  : " << owner_name << endl;
-       cout << "subs count  : " << subs_count << endl;
-  }
-};
-//////////////////////////////////////////////////////////////////////
 string parse_string(string st)
 {
   string result ;
